@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <link rel="stylesheet" href="swiper.min.css">
+  <link rel="stylesheet" href="main.css">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <meta charset="utf-8">
+  <title>Work: mDWT</title>
+</head>
+
+<body>
+  <div class="navWrap">
+    <nav>
+      <ul class="navLinks">
+        <li><a href="/" class="navLink">Home</a>
+          <hr>
+        </li>
+        <li><a href="work.html" class="navLink">My Works</a>
+          <hr class="current-nav">
+        </li>
+        <li><a href="about.html" class="navLink">About Me</a>
+          <hr>
+        </li>
+        <li><a href="contact.html" class="navLink"><em>Let's Work Together</em></a>
+          <hr>
+        </li>
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+  </div>
+  <main>
+    <h2>Works:</h2> <br>
+
+    <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="imgbox">
+          <a href="https://scribblepositive.com/" target="_blank"><img src="Images/spweb.jpg" alt=""></a>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="imgbox">
+          <a href="#"><img src="Images/ncreation.JPG" alt=""></a>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="imgbox">
+          <a href="#"><img src="Images/game.JPG" alt=""></a>
+        </div>
+      </div>
+
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+
+  </main>
+  <div class="logodiv">
+    <a href="/"><img class="site-logo" src="Images/whiteLogoPortfolio.png" alt="myLogo"></a>
+  </div>
+  <div class="animation">
+    <p>1 <br>0 <br>1 <br>0 <br>1</p>
+  </div>
+  <div class="animation animation1">
+    <p>0 <br>1 <br>0</p>
+  </div>
+  <script src="swiper.min.js"></script>
+  <script src="app.js"> </script>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 80,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows : true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
+</body>
+
+</html>
